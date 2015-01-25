@@ -67,6 +67,10 @@ void _moPubShowInterstitialAd( const char * adUnitId )
 	[[MoPubManager sharedManager] showInterstitialAd:GetStringParam( adUnitId )];
 }
 
+bool _moPubIsInterstitialReady( const char * adUnitId )
+{
+    return [[MoPubManager sharedManager] isInterstitialReady:GetStringParam( adUnitId )];
+}
 
 // Reports an app download to MoPub
 void _moPubReportApplicationOpen( const char * iTunesAppId )

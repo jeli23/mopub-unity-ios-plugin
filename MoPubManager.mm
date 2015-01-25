@@ -251,6 +251,13 @@ UIViewController *UnityGetGLViewController();
 	[interstitial showFromViewController:UnityGetGLViewController()];
 }
 
+- (BOOL)isInterstitialReady:(NSString*)adUnitId
+{
+    MPInterstitialAdController *interstitial = [MPInterstitialAdController interstitialAdControllerForAdUnitId:adUnitId];
+    
+    return interstitial.ready;
+}
+
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 #pragma mark - MPAdViewDelegate

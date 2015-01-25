@@ -64,6 +64,6 @@ typedef enum
 
 - (void)showInterstitialAd:(NSString*)adUnitId;
 
-
+- (BOOL)isInterstitialReady:(NSString*)adUnitId;
 
 @end
